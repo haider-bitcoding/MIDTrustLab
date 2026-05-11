@@ -8,13 +8,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <Image 
-              src="/logo.png" 
-              alt="MIDTrust Lab Logo" 
-              width={32} 
-              height={32} 
-              className="object-contain brightness-0 invert"
-            />
+          {/* <Image 
+            src="/logo.png" 
+            alt="MIDTrust Lab Logo" 
+            width={60} 
+            height={40} 
+            className="object-contain transition-transform group-hover:scale-105"
+          /> */}
             <span className="font-bold text-lg">{siteConfig.labName}</span>
           </div>
           <p className="text-sm text-gray-300 leading-relaxed">

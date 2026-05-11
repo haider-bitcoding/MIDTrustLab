@@ -1,0 +1,22 @@
+{
+  "labName": "MIDTrust Lab",
+  "expandedName": "Multimodal Intelligence & Distributed Trust Lab",
+  "institution": "Shenzhen University of Information Technology",
+  "location": "Shenzhen, China",
+  "contactEmail": "sadiq@suit-sz.edu.cn",
+  "director": {
+    "name": "Zhang Yunsheng",
+    "bio": "Zhang Yunsheng is an Associate Professor at Shenzhen University of Information Technology. He received the M.S. degree in Software Engineering in 2005 and the Ph.D. degree in Computer Software and Theory in 2011 from the University of Electronic Science and Technology of China (UESTC). During his doctoral studies, he was a Joint-Training Ph.D. Student at the University of Missouri, Columbia from 2007 to 2009 and a Visiting Scholar at Yale University in 2010. He conducted postdoctoral research at Tsinghua University (2011-2012) and subsequently served as a Research Fellow at The Hong Kong Polytechnic University (2016-2018). His research interests include computer vision and signal processing, networks and communications, parallel and distributed computing, and AI agent technology."
+  },
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Research", "href": "/research" },
+    { "label": "Team", "href": "/team" },
+    { "label": "Publications", "href": "/publications" },
+    { "label": "Projects", "href": "/projects" },
+    { "label": "Collaborations", "href": "/collaborations" },
+    { "label": "News", "href": "/news" },
+    { "label": "Contact", "href": "/contact" }
+  ]
+}

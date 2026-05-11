@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pub1",
+    "title": "Placeholder Publication 1",
+    "authors": ["Sadiq, M.", "Author, B."],
+    "venue": "International Conference on AI",
+    "year": 2025,
+    "tags": ["Trustworthy AI"],
+    "link": "#",
+    "featured": true
+  },
+  {
+    "id": "pub2",
+    "title": "Placeholder Publication 2",
+    "authors": ["Sadiq, M.", "Author, C."],
+    "venue": "Journal of Distributed Trust",
+    "year": 2024,
+    "tags": ["Blockchain"],
+    "link": "#",
+    "featured": false
+  }
+]

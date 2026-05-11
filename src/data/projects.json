@@ -1,0 +1,11 @@
+[
+  {
+    "id": "proj1",
+    "title": "Trustworthy Multimodal Fusion",
+    "summary": "Developing systems that combine visual and auditory signals while maintaining transparency and trust.",
+    "status": "Ongoing",
+    "theme": "Multimodal Intelligence",
+    "collaborators": ["Partner University A"],
+    "image": "trustworthy-multimodal-intelligence.jpg"
+  }
+]

@@ -1,7 +1,13 @@
 "use client";
+import { Metadata } from "next";
 import siteConfig from "@/data/site-config.json";
 import { useState } from "react";
 import { sendEmail } from "@/app/actions/contact";
+
+// Note: Metadata cannot be exported from a 'use client' component. 
+// For a contact page, we should handle metadata in a separate layout.tsx or 
+// simply accept that this is a client-side page. 
+// However, since this is the page.tsx, we can't export metadata.
 
 export default function ContactPage() {
   const [status, setStatus] = useState("");

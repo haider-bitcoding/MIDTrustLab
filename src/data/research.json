@@ -4,42 +4,42 @@
     "title": "Multimodal Intelligence",
     "description": "Exploring how intelligent systems can integrate visual, linguistic, emotional, and contextual signals to better understand human communication.",
     "keywords": ["Multimodal Fusion", "Affective Computing", "Human-Centered AI"],
-    "image": "mi.jpg"
+    "image": "/mi.jpg"
   },
   {
     "id": "computer-vision",
     "title": "Computer Vision and Facial Analysis",
     "description": "Advancing the state of the art in visual recognition and facial analysis for a wide range of applications.",
     "keywords": ["Facial Landmark Detection", "Object Recognition", "Image Processing"],
-    "image": "facial analysis.jpeg"
+    "image": "/facial analysis.jpeg"
   },
   {
     "id": "llms",
     "title": "Large Language Models and Intelligent Systems",
     "description": "Developing and optimizing LLMs for specialized domains and creating intelligent systems that leverage natural language processing.",
     "keywords": ["LLMs", "NLP", "Generative AI"],
-    "image": "llm.jpg"
+    "image": "/llm.jpg"
   },
   {
     "id": "trustworthy-ai",
     "title": "Trustworthy AI",
     "description": "Ensuring that AI systems are transparent, accountable, and fair, with a focus on human-centered design.",
     "keywords": ["Explainable AI", "AI Ethics", "Fairness"],
-    "image": "AI.jpg"
+    "image": "/AI.jpg"
   },
   {
     "id": "cybersecurity",
     "title": "Cybersecurity and Information Security",
     "description": "Protecting digital assets and infrastructure through innovative security measures and threat detection.",
     "keywords": ["Threat Intelligence", "Network Security", "Cryptography"],
-    "image": "cyber-security.png"
+    "image": "/cyber-security.png"
   },
   {
     "id": "distributed-trust",
     "title": "Distributed Trust and Blockchain-Assisted Security",
     "description": "Investigating secure and decentralized approaches to strengthen data integrity, accountability, and trust in AI-enabled systems.",
     "keywords": ["Blockchain", "Decentralized Identity", "Distributed Ledger Technology"],
-    "image": "blockchain-security.jpg"
+    "image": "/blockchain-security.jpg"
   }
 ]
 

@@ -1,4 +1,11 @@
+import Image from "next/image";
+import { Metadata } from "next";
 import researchData from "@/data/research.json";
+
+export const metadata: Metadata = {
+  title: "Research | MIDTrust Lab",
+  description: "Explore the core research themes of MIDTrust Lab, from Multimodal Intelligence to Distributed Trust.",
+};
 
 export default function ResearchPage() {
   return (
@@ -16,11 +23,12 @@ export default function ResearchPage() {
           {researchData.map((item) => (
             <div key={item.id} className="flex flex-col md:flex-row gap-12 items-start p-8 rounded-3xl bg-white border border-gray-100 hover:shadow-lg transition-all">
               <div className="w-full md:w-1/3">
-                <div className="aspect-square rounded-2xl overflow-hidden shadow-md">
-                  <img 
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-md relative">
+                  <Image 
                     src={item.image} 
                     alt={item.title} 
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
@@ -44,3 +52,5 @@ export default function ResearchPage() {
     </div>
   );
 }
+
+

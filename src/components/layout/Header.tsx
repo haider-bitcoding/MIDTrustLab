@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import siteConfig from "@/data/site-config.json";
@@ -12,9 +13,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <img 
+          <Image 
             src="/logo.png" 
             alt="MIDTrust Lab Logo" 
+            width={120} 
+            height={80} 
             className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
           />
           <div className="flex flex-col">

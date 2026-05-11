@@ -12,10 +12,11 @@ export default function DirectorBlock() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="w-64 h-64 md:w-80 md:h-80 bg-gray-300 rounded-2xl overflow-hidden shadow-2xl relative">
             {director?.photo ? (
-              <img 
+              <Image 
                 src={director.photo} 
                 alt={director.name} 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             ) : (
               <div className="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">

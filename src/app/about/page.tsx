@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import siteConfig from "@/data/site-config.json";
+
+export const metadata: Metadata = {
+  title: "About | MIDTrust Lab",
+  description: "Learn about the mission, vision, and identity of the Multimodal Intelligence & Distributed Trust Lab.",
+};
 
 export default function AboutPage() {
   return (

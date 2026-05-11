@@ -1,4 +1,11 @@
+import Image from "next/image";
+import { Metadata } from "next";
 import newsData from "@/data/news.json";
+
+export const metadata: Metadata = {
+  title: "News & Activities | MIDTrust Lab",
+  description: "Stay updated with the latest achievements, seminars, and activities from the MIDTrust Lab.",
+};
 
 export default function NewsPage() {
   return (
@@ -13,10 +20,11 @@ export default function NewsPage() {
           {newsData.map((item) => (
             <div key={item.id} className="bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-lg transition-all flex flex-col md:flex-row">
               <div className="w-full md:w-64 aspect-video md:aspect-square relative overflow-hidden">
-                <img 
+                <Image 
                   src={item.image} 
                   alt={item.title} 
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-6 flex-1">
@@ -41,3 +49,4 @@ export default function NewsPage() {
     </div>
   );
 }
+

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import researchData from "@/data/research.json";
 
 export default function ResearchPreview() {
@@ -16,11 +17,12 @@ export default function ResearchPreview() {
               key={item.id} 
               className="p-0 border border-gray-100 rounded-2xl hover:border-accent hover:shadow-xl transition-all group bg-white overflow-hidden"
             >
-              <div className="aspect-video w-full overflow-hidden">
-                <img 
+              <div className="aspect-video w-full overflow-hidden relative">
+                <Image 
                   src={item.image} 
                   alt={item.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-8">

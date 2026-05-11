@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import siteConfig from "@/data/site-config.json";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Collaborations | MIDTrust Lab",
+  description: "Explore partnership opportunities with MIDTrust Lab in the field of Trustworthy AI and Multimodal Intelligence.",
+};
 
 export default function CollaborationsPage() {
   return (

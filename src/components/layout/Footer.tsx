@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import siteConfig from "@/data/site-config.json";
 
 export default function Footer() {
@@ -7,10 +8,12 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <img 
-              src="logo.png" 
+            <Image 
+              src="/logo.png" 
               alt="MIDTrust Lab Logo" 
-              className="h-8 w-auto object-contain brightness-0 invert"
+              width={32} 
+              height={32} 
+              className="object-contain brightness-0 invert"
             />
             <span className="font-bold text-lg">{siteConfig.labName}</span>
           </div>

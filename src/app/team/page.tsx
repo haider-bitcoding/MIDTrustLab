@@ -1,4 +1,11 @@
+import Image from "next/image";
+import { Metadata } from "next";
 import teamData from "@/data/team.json";
+
+export const metadata: Metadata = {
+  title: "Our Team | MIDTrust Lab",
+  description: "Meet the researchers, students, and leadership of the Multimodal Intelligence & Distributed Trust Lab.",
+};
 
 export default function TeamPage() {
   return (
@@ -14,10 +21,11 @@ export default function TeamPage() {
             <div key={member.id} className="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
               <div className="aspect-square bg-gray-200 relative">
                 {member.photo ? (
-                  <img 
+                  <Image 
                     src={member.photo} 
                     alt={member.name} 
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center text-gray-400">
@@ -48,4 +56,5 @@ export default function TeamPage() {
     </div>
   );
 }
+
 

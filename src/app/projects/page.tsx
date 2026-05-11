@@ -1,4 +1,11 @@
+import Image from "next/image";
+import { Metadata } from "next";
 import projectsData from "@/data/projects.json";
+
+export const metadata: Metadata = {
+  title: "Projects | MIDTrust Lab",
+  description: "Ongoing and completed research projects at MIDTrust Lab focusing on Trustworthy AI and Multimodal Intelligence.",
+};
 
 export default function ProjectsPage() {
   return (
@@ -13,10 +20,11 @@ export default function ProjectsPage() {
           {projectsData.map((proj) => (
             <div key={proj.id} className="bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl transition-all group">
               <div className="aspect-video relative overflow-hidden">
-                <img 
+                <Image 
                   src={proj.image} 
                   alt={proj.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-8">
@@ -47,3 +55,4 @@ export default function ProjectsPage() {
     </div>
   );
 }
+
